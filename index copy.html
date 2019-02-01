@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- AEDRIC: looks like your style sheet isn't getting imported correctly. Check the naming of either this, or the css file -->
     <link rel='stylesheet' href='./style.css'>
     <title>Tahiro--classwork</title>
   </head>
@@ -34,7 +35,7 @@
             </div>
           </nav>
         <div id='container'>
-          
+              <!-- AEDRIC: Nice usage of columns, remember that you can use col-md-* and col-sm-* to manage for different screen sizes  -->
             <div class="row">
                 <div class="col-lg-4 white1">
                   <div class="card">
@@ -66,7 +67,8 @@
             </div>
 
         </div>   
-        
+            <!-- AEDRIC: this being a part of the same div as the form group isn't wrong, but it's a little odd. 
+                  The two seem pretty seperate.  -->
           <div class='row'>
             <div class='vid'>
             <video autoplay muted loop>
@@ -76,6 +78,7 @@
              <form>
               <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
+                    <!-- AEDRIC:  Nice! -->
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
               </div>
@@ -83,6 +86,7 @@
                 <label for="exampleInputPassword1">Password</label>
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" Required>
               </div>
+               <!-- AEDRIC: any ideas why this button's placemet is weird? -->
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
             </div>
